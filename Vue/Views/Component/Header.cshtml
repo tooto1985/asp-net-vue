@@ -1,0 +1,14 @@
+﻿@{
+    Layout = null;
+}
+<script type="text/x-template" id="headerComponent">
+    <p>
+        <router-link to="/foo">Go to Foo</router-link>
+        <router-link to="/bar">Go to Bar</router-link>
+    </p>
+</script>
+<script>
+    var headerComponent = Vue.component("headerComponent", {
+        template: "#headerComponent"
+    })
+</script>

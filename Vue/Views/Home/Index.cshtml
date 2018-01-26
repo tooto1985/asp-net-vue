@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<script type="text/x-template" id="header-component">
+    <p>
+        <router-link to="/foo">選單1</router-link>
+        <router-link to="/bar">選單2</router-link>
+        <router-link to="/zoo">選單3</router-link>
+    </p>
+</script>
+
+<script type="text/x-template" id="foo-component">
+    <div>foofoofoo</div>
+</script>
+
+<script type="text/x-template" id="bar-component">
+    <div>barbarbar</div>
+</script>
+
+<script type="text/x-template" id="zoo-component">
+    <div>zoozoozoo</div>
+</script>
+
+<div id="app" v-cloak>
+    <h1>{{message}}</h1>
+    <header-component></header-component>
+    <router-view></router-view>
+</div>
